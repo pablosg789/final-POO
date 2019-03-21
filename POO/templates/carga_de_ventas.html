@@ -1,0 +1,71 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+
+    <div class="page-header">
+       <h1>CARGAR VENTA:</h1>
+       <br>
+       <h3>Completar todos los campos </h3>
+       <br>
+       <hr>
+       <form role="form" action="/agrega_venta" method="POST">
+        
+            <div class="form-horizontal">
+
+                <h4>Información del producto</h4>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="email">Nombre :</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="nombre_producto" class="form-control" placeholder="..." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="email">Código :</label>
+                    <div class="col-sm-2">
+                        <input type="text" name="codigo" class="form-control" placeholder="..." required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="email">Precio :</label>
+                    <div class="col-sm-1">
+                        <input type="text" name="precio" class="form-control" placeholder="..." required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="email">Cantidad :</label>
+                    <div class="col-sm-1">
+                        <input type="text" name="cantidad" class="form-control" placeholder="..." required >
+                    </div>
+                </div>
+            
+ 
+                <br>
+                
+
+                <h4>Información del cliente</h4>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="email">Nombre :</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="nombre" class="form-control" placeholder="..." required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="email">Apellido :</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="apellido" class="form-control" placeholder="..." required >
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <input type="submit" class="btn btn-default" value="AGREGAR VENTA">
+        </form>
+        <br>
+        <br>
+
+    
+
+    </div>
+
+
+{% endblock %}

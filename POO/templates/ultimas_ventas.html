@@ -1,0 +1,22 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+
+    <div class="page-header">
+    
+    <h1>ULTIMAS VENTAS</h1>
+    <br>
+    <br>
+
+        
+    </div>
+    <br>
+    <div>
+        {% from '_macro.html' import crear_ultimas_ventas %}
+
+        {{ crear_ultimas_ventas( campo1,campo2,campo3,campo4,campo5,rango) }}
+
+    </div>
+    
+
+{% endblock %}
